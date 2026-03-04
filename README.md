@@ -29,32 +29,37 @@ Este é um projeto de automação em Python desenvolvido para acessar o portal d
 ### 2. Instalação
 Clone este repositório no seu computador:
 
+```bash
 git clone [https://github.com/SEU_USUARIO/automacao-boleto.git](https://github.com/SEU_USUARIO/automacao-boleto.git)
 cd automacao-boleto
-Crie e ative um ambiente virtual:
+```
 
+Crie e ative um ambiente virtual:
+```bash
 python -m venv venv
 # No Windows:
 venv\Scripts\activate
+```
 
 Instale as bibliotecas necessárias:
-
+```bash
 pip install selenium webdriver-manager python-dotenv
-
+```
 3. Variáveis de Ambiente
 Por segurança, as senhas não ficam no código. Crie um arquivo chamado .env na raiz do projeto e preencha com as suas informações:
-
+```bash
 Snippet de código (Assim como está no arquivo .env.example):
 LOGIN_USUARIO=seu_ra_aqui
 LOGIN_SENHA=sua_senha_da_faculdade_aqui
 EMAIL_REMETENTE=seu.email@gmail.com
 SENHA_EMAIL=sua_senha_de_aplicativo_do_google_aqui
 EMAIL_DESTINO=email.de.destino@gmail.com
-
+```
 4. Uso Manual
 Para rodar a automação manualmente, basta executar o arquivo principal:
-
+```bash
 python main.py
+```
 Siga as instruções no terminal para resolver o CAPTCHA quando solicitado e pressione ENTER.
 
 5. Execução Automática (Windows)
